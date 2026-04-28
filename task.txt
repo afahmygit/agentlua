@@ -1,0 +1,195 @@
+https://docs.heylua.ai/overview
+
+
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.heylua.ai/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Quick Start
+
+> Get your first AI skill running in 5 minutes
+
+## 🚀 Quick Start (5 Minutes)
+
+Get from zero to your first deployed AI skill in minutes.
+
+<Steps>
+  <Step title="Install the CLI">
+    <CodeGroup>
+      ```bash npm theme={null}
+      npm install -g lua-cli
+      ```
+
+      ```bash yarn theme={null}
+      yarn global add lua-cli
+      ```
+
+      ```bash pnpm theme={null}
+      pnpm add -g lua-cli
+      ```
+    </CodeGroup>
+  </Step>
+
+  <Step title="Set up authentication">
+    ```bash theme={null}
+    lua auth configure
+    ```
+
+    Choose **Email** and follow the prompts:
+
+    1. Enter your email
+    2. Check email for 6-digit code
+    3. Enter the code
+    4. Done! API key automatically generated and saved
+  </Step>
+
+  <Step title="Create your first skill">
+    ```bash theme={null}
+    mkdir my-first-skill && cd my-first-skill
+    lua init
+    ```
+
+    Choose "Create new agent" and follow prompts to set up your agent
+  </Step>
+
+  <Step title="Test it locally">
+    ```bash theme={null}
+    lua test
+    ```
+
+    Select a tool and try it out with different inputs!
+  </Step>
+</Steps>
+
+<Check>
+  **Congratulations!** You now have a working AI skill! 🎉
+</Check>
+
+## What You Just Created
+
+When you ran `lua init`, you got:
+
+* ✅ Multiple skill examples
+* ✅ 30+ tool examples
+* ✅ Integration with all Lua platform APIs
+* ✅ TypeScript configuration
+* ✅ Ready to customize and deploy
+
+## Try These Commands
+
+### Test Individual Tools
+
+```bash theme={null}
+lua test
+```
+
+Select tools to test:
+
+* `get_weather` - Enter city: "London"
+* `search_products` - Enter query: "laptop"
+* `create_basket` - Create a shopping cart
+
+### Test Your Tools
+
+```bash theme={null}
+lua test
+```
+
+Try testing these tools:
+
+* `get_weather` - Enter "Tokyo"
+* `search_products` - Enter "laptop"
+* `create_basket` - Create a shopping cart
+* `add_to_basket` - Add items to cart
+
+## Test on Real Channels
+
+Want to test your agent on WhatsApp, Facebook, Instagram, Email, or Slack **without setting up your own channels?**
+
+<Card title="Quick Testing Channels" icon="bolt" href="/channels/quick-testing" horizontal>
+  Link your agent to existing Lua channels for instant testing on any platform
+</Card>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="AI Agent Building Guide" icon="robot" href="/ai-guide">
+    Using Cursor, Windsurf, or Copilot? Complete guide for AI IDEs
+  </Card>
+
+  <Card title="Test on Real Channels" icon="mobile" href="/channels/quick-testing">
+    Test your agent on WhatsApp, Facebook, Instagram, and more
+  </Card>
+
+  <Card title="Understand the Template" icon="layer-group" href="/template/overview">
+    Learn about the 30+ example tools included
+  </Card>
+
+  <Card title="Learn Core Concepts" icon="book" href="/concepts/skills-and-tools">
+    Understand skills, tools, and how they work
+  </Card>
+
+  <Card title="Explore CLI Commands" icon="terminal" href="/cli/overview">
+    Master all available CLI commands
+  </Card>
+
+  <Card title="API Reference" icon="code" href="/api/overview">
+    Dive into the complete API documentation
+  </Card>
+
+  <Card title="Set Up Your Own Channels" icon="plug" href="/channels/introduction">
+    Connect your own channels for production
+  </Card>
+</CardGroup>
+
+## Common First Tasks
+
+<AccordionGroup>
+  <Accordion title="Customize an Example Tool">
+    1. Open `src/tools/GetWeatherTool.ts`
+    2. Modify the `execute` function
+    3. Save the file (auto-reloads in dev mode)
+    4. Test in the chat interface
+  </Accordion>
+
+  <Accordion title="Create a New Tool">
+    1. Create `src/tools/MyTool.ts`
+    2. Implement the `LuaTool` interface
+    3. Add to skill in `src/index.ts`
+    4. Run `lua test` to try it
+  </Accordion>
+
+  <Accordion title="Deploy to Production">
+    ```bash theme={null}
+    lua push      # Upload version
+    lua deploy    # Deploy to production
+    ```
+  </Accordion>
+
+  <Accordion title="Remove Unused Examples">
+    1. Delete tool files you don't need from `src/tools/`
+    2. Update `src/index.ts` to remove references
+    3. Test with `lua test`
+  </Accordion>
+</AccordionGroup>
+
+## Need Help?
+
+<CardGroup cols={3}>
+  <Card title="Discord Community" icon="discord" href="https://discord.gg/SRPEuwCzaD">
+    Chat with other builders, get help, and share your projects
+  </Card>
+
+  <Card title="Documentation" icon="book" href="https://docs.heylua.ai">
+    Complete guides and references
+  </Card>
+
+  <Card title="Email Support" icon="envelope" href="mailto:support@lua.ai">
+    Contact our support team
+  </Card>
+</CardGroup>
+
+
+===
+
+okay that was documentation task is to o apply- please build an agent of your choice on our docs and submit it Any applicants without an agent won't be considered- be creative! https://docs.heylua.ai/overview.

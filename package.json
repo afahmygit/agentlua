@@ -1,0 +1,52 @@
+{
+  "name": "mindful-companion-agent",
+  "version": "1.0.0",
+  "description": "A wellness and productivity AI companion that tracks mood, habits, and mindfulness",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "setup": "node scripts/setup.js",
+    "setup:win": "setup.bat",
+    "setup:mac": "bash setup.sh",
+    "setup:linux": "bash setup.sh",
+    "chat": "bash chat.sh",
+    "chat:win": "chat.bat",
+    "test": "bash test.sh",
+    "test:win": "test.bat",
+    "deploy": "bash deploy.sh",
+    "deploy:win": "deploy.bat",
+    "logs": "bash logs.sh",
+    "logs:win": "logs.bat",
+    "auth": "lua auth configure",
+    "init": "lua init --agent-name \"Mindful Companion\"",
+    "push": "lua push all --force",
+    "deploy:cli": "lua deploy skill --name mindful-companion --set-version latest --force",
+    "chat:sandbox": "lua chat -e sandbox",
+    "chat:prod": "lua chat -e production",
+    "test:mood": "lua test skill --name log_mood --input '{\"mood\": 8, \"note\": \"Feeling great!\"}'",
+    "test:affirmation": "lua test skill --name get_affirmation --input '{\"category\": \"confidence\", \"count\": 2}'",
+    "test:habit": "lua test skill --name track_habit --input '{\"habitName\": \"meditation\"}'",
+    "test:mindfulness": "lua test skill --name mindfulness_exercise --input '{\"type\": \"breathing\", \"duration\": \"short\"}'",
+    "test:pomodoro": "lua test skill --name start_pomodoro --input '{\"task\": \"Focus work\", \"duration\": 25}'",
+    "test:journal": "lua test skill --name write_journal --input '{\"entry\": \"Today was a good day!\", \"mood\": 7, \"tags\": [\"gratitude\"]}'",
+    "test:all": "npm run test:mood && npm run test:affirmation && npm run test:habit && npm run test:mindfulness && npm run test:pomodoro && npm run test:journal"
+  },
+  "dependencies": {
+    "lua-cli": "latest",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  },
+  "keywords": [
+    "lua",
+    "ai-agent",
+    "wellness",
+    "mindfulness",
+    "productivity",
+    "habit-tracking"
+  ],
+  "author": "",
+  "license": "MIT"
+}
